@@ -29,7 +29,7 @@ jobs:
       run: go build -o apx
 
     - name: Check for missing strings
-      uses: vanilla-os/missing-strings-golang-action@v0.1.0
+      uses: kbdharun/missing-strings-golang-action@v1
 
     - name: Compress
       run: tar -czvf apx.tar.gz apx
