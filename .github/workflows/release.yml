@@ -73,4 +73,4 @@ jobs:
         id: attest
         uses: actions/attest-build-provenance@v1
         with:
-          subject-path: '*.zip, checksums.txt'
+          subject-path: '*.tar.gz, checksums.txt'
