@@ -67,7 +67,7 @@ jobs:
       - name: Create the release
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release create "${{ github.ref_name }}" --generate-notes *.zip checksums.txt
+        run: gh release create "${{ github.ref_name }}" --generate-notes *.tar.gz checksums.txt
       
       - name: Attest release files
         id: attest
