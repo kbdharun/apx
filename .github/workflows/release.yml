@@ -61,9 +61,8 @@ jobs:
 
       - name: Download Artifact
         uses: actions/download-artifact@v4
-      
-      - name: Extract ZIP Artifact
-        run: unzip apx.zip
+        with:
+          name: apx
 
       - name: Create the release
         env:
